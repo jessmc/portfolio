@@ -78,7 +78,7 @@ margin: 0;
 			text-align: center;
 			}
 			h3 {
-			font-size: 20pt;
+			font-size: 30pt;
 			font-family: 'Armata', sans-serif;
 			text-align: center;
 
@@ -88,7 +88,28 @@ margin: 0;
 				font-size: 20pt;
 				text-align: center;
 			}
-			.school-logos {
+
+			.code-logos {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				padding: 0;
+				margin-top: -40px;
+				li {
+					list-style-type: none;
+					align-self: center;
+					padding: 40px;
+					img {
+						width: 100px;
+						
+
+					}
+				}
+			}
+		}
+	}
+	.contact {
+		.school-logos {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
@@ -103,20 +124,5 @@ margin: 0;
 				
 				}
 			}
-			.code-logos {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-around;
-				li {
-					list-style-type: none;
-					align-self: center;
-					img {
-						width: 100px;
-						
-
-					}
-				}
-			}
-		}
 	}
 }
