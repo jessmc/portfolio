@@ -3,6 +3,18 @@
 
 body {
   margin: 0; }
+  body .pink {
+    position: absolute;
+    width: 50%;
+    z-index: 1;
+    top: -50px;
+    left: -10px; }
+  body .blue {
+    position: absolute;
+    width: 60%;
+    z-index: 1;
+    right: 0;
+    top: 10px; }
   body .navbar {
     display: none; }
     body .navbar ul {
@@ -12,13 +24,15 @@ body {
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      background-color: #00B8A9;
+      background-color: #283C63;
       margin: 0;
-      padding: 0; }
+      padding: 0;
+      z-index: 3; }
       body .navbar ul .name {
         margin-right: auto;
         font-size: 20pt;
-        font-family: 'Armata', sans-serif; }
+        font-family: 'Armata', sans-serif;
+        color: #928A97; }
       body .navbar ul li {
         list-style-type: none;
         padding: 10px; }
@@ -39,7 +53,10 @@ body {
       height: 90vh; }
     body section .content {
       display: table-cell;
-      vertical-align: middle; }
+      vertical-align: middle;
+      position: absolute;
+      z-index: 2;
+      -webkit-animation-duration: 4s; }
       body section .content h1 {
         font-family: 'Armata', sans-serif;
         font-size: 60pt;
@@ -52,34 +69,72 @@ body {
   body .about-me .about-content h1 {
     font-size: 40pt;
     font-family: 'Armata', sans-serif;
-    text-align: center; }
+    text-align: center;
+    z-index: 2; }
   body .about-me .about-content h3 {
-    font-size: 20pt;
+    font-size: 30pt;
     font-family: 'Armata', sans-serif;
     text-align: center; }
   body .about-me .about-content p {
     font-family: 'Open Sans', sans-serif;
     font-size: 20pt;
-    text-align: center; }
-  body .about-me .about-content .school-logos {
+    text-align: center;
+    z-index: 2; }
+  body .about-me .about-content .code-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: -40px;
+    margin-left: 100px;
+    margin-right: 100px; }
+    body .about-me .about-content .code-logos li {
+      list-style-type: none;
+      align-self: center;
+      padding: 40px; }
+      body .about-me .about-content .code-logos li img {
+        width: 100px; }
+  body .projects {
+    padding: 0;
+    margin-top: 150px;
+    background-color: #FBE8D3; }
+    body .projects .project-content {
+      margin-left: 60px;
+      margin-right: 60px; }
+      body .projects .project-content h1 {
+        font-size: 40pt;
+        font-family: 'Armata', sans-serif;
+        text-align: center; }
+      body .projects .project-content ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        padding: 1em; }
+        body .projects .project-content ul li {
+          list-style-type: none; }
+          body .projects .project-content ul li img {
+            width: 600px;
+            border: 3px solid #000;
+            box-shadow: 10px 10px 5px #888888; }
+          body .projects .project-content ul li h3 {
+            font-size: 20pt;
+            font-family: 'Armata', sans-serif;
+            text-align: center; }
+          body .projects .project-content ul li p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15pt;
+            text-align: center; }
+  body .contact .school-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0; }
-    body .about-me .about-content .school-logos li {
+    body .contact .school-logos li {
       list-style-type: none;
       padding: 1em; }
-      body .about-me .about-content .school-logos li img {
+      body .contact .school-logos li img {
         width: 100px;
         border-radius: 50%; }
-  body .about-me .about-content .code-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-    body .about-me .about-content .code-logos li {
-      list-style-type: none;
-      align-self: center; }
-      body .about-me .about-content .code-logos li img {
-        width: 100px; }
 
 /*# sourceMappingURL=style.css.map */
