@@ -2,6 +2,9 @@
 
 body {
 margin: 0;
+
+// Navigation Bar - not visible until About me Section
+
 	.navbar {
 	display: none;
 		ul {
@@ -16,23 +19,41 @@ margin: 0;
 	 	padding: 0;
 	 	z-index: 1000;
 			.name {
-			margin-right: auto;
-			font-size: 20pt;
-			font-family: 'Armata', sans-serif;
-			color: #FFF;
+			@media (min-width: 768px) {
+				margin-right: auto;	
+			}
+				a {
+				@media (min-width: 768px) {
+					font-size: 20pt;
+				}
+				font-size: 14pt;
+				font-family: 'Armata', sans-serif;
+				color: #FFF;
+					&:hover {
+						@media (min-width: 768px) {
+						font-size: 22pt;	
+						}
+						
+					}
+				}
 			}
 			li {
 			list-style-type: none;
 			padding: 10px;
 				a {
 				font-family: 'Armata', sans-serif;
-				font-size: 10pt;
+				font-size: 8pt;
 				text-decoration: none;
 				color: #FFF;
+					@media (min-width: 768px) {
+					font-size: 10pt;
+				}
 				}
 			}
 		}
 	}
+
+
 section {
 width: 100%;
 padding: 0 7%;
@@ -40,6 +61,8 @@ display: table;
 margin: 0;
 max-width: none;
 height: 100vh;
+
+// Intro Page, Name and Tag
 
 	.intro {
 	height: 90vh;
@@ -65,33 +88,47 @@ height: 100vh;
 	}
 }
 
-	.about-me {
+// About Me Section
 
+	.about-me {
+		margin-top: 150px;
+		
 		.about-content {
 		position: relative;
-		margin-top: 100px;
+
 			h1 {
-			font-size: 40pt;
+			font-size: 30pt;
 			font-family: 'Armata', sans-serif;
 			text-align: center;
 			z-index: 3;
+				@media (min-width: 768px) {
+				font-size: 40pt;
+				}
 			}
 			
 			p {
+			font-size: 14pt;
 			font-family: 'Open Sans', sans-serif;
-			font-size: 20pt;
 			text-align: center;
 			z-index: 3;
 			position: relative;
+				@media (min-width: 768px) {
+				font-size: 20pt;
+				}
 			}
 		}
 
 		.skills-content {
 			margin-top: 150px;
+
 			h3 {
-			font-size: 30pt;
+			font-size: 24pt;
 			font-family: 'Armata', sans-serif;
 			text-align: center;
+
+				@media (min-width: 768px) {
+				font-size: 30pt;
+				}
 			}
 
 			.code-logos {
@@ -99,9 +136,12 @@ height: 100vh;
 			flex-wrap: wrap;
 			justify-content: space-around;
 			padding: 0;
-			margin-top: -40px;
-			margin-left: 100px;
-			margin-right: 100px;
+			margin-top: -10px;
+			
+				@media (min-width: 768px) {
+				margin-left: 100px;
+				margin-right: 100px;
+				}
 				li {
 				list-style-type: none;
 				align-self: center;
@@ -114,53 +154,106 @@ height: 100vh;
 		}
 	}
 
+// Projects Section 
 
 	.projects {
 	padding: 0;
 	margin-top: 150px;
 	background-color: #FFF;
+
 		.project-content {
-		margin-left: 60px;
-		margin-right: 60px;
+
+			@media (min-width: 768px) {
+			margin-left: 60px;
+			margin-right: 60px;
+			}
+	
 			h1 {
-			font-size: 40pt;
+			font-size: 30pt;
 			font-family: 'Armata', sans-serif;
 			text-align: center;
-			}
-			ul {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			align-items: center;
-			background-color: #7C90A0;
-			padding: 2em;
-			margin: 4em;
-			box-shadow: 10px 10px 5px #888888;
-			border-radius: 40px;
-
-				li {
-				list-style-type: none;
-				align-self: center;
-
-					img {
-					width: 600px;
-					border: 3px solid #000;
-					}
-					h3 {
-					font-size: 20pt;
-					font-family: 'Armata', sans-serif;
-					text-align: center;
-					}
-					p {
-					font-family: 'Open Sans', sans-serif;
-					font-size: 14pt;
-					text-align: center;
-					padding: 10px;
-					}
+				@media (min-width: 768px) {
+				font-size: 40pt;
 				}
 			}
+			.boxes {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0;
+			margin:0;
+				@media (min-width: 769px) {
+
+				}
+				li {
+				list-style-type: none;
+				padding: 2em;
+					@media (min-width: 800px) {
+						padding: 0;
+						margin: 0;
+					}
+
+					ul {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					align-items: center;
+					background-color: #7C90A0;
+					box-shadow: 10px 10px 5px #888888;
+					padding: 0;
+						@media (min-width: 800px) {
+						flex-direction: row;
+						padding: 2em;
+						margin: 2em;
+						border-radius: 40px;
+						}
+
+						li {
+						list-style-type: none;
+						align-self: center;
+						padding: 10px;
+
+							img {
+							padding: 0;
+							margin: 0;
+							width: 100%;
+							border: 3px solid black;
+							
+								@media (min-width: 1050px) {
+								width: 600px;
+								padding: 0;
+								border: 3px solid #000;
+								}	
+							}
+							h3 {
+
+							font-size: 14pt;
+							font-family: 'Armata', sans-serif;
+							text-align: center;
+								@media (min-width: 800px) {
+									font-size: 20pt;
+								}
+							}
+							p {
+							font-family: 'Open Sans', sans-serif;
+							font-size: 12pt;
+							text-align: center;
+							
+								@media (min-width: 800px) {
+									font-size: 14pt;
+									padding: 10px;
+								}
+							}
+						}
+					}
+				}	
+			}	
 		}
 	}
+
+
+// Contact Me Section	
 	.contact {
 	background: #444554; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#FFF, #444554); /* For Safari 5.1 to 6.0 */
@@ -168,18 +261,31 @@ height: 100vh;
     background: -moz-linear-gradient(#FFF, #444554); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#FFF, #444554); /* Standard syntax */
 	padding: 0;
+
 		.contact-content {
 		margin-top: 100px;
 			h1 {
-			font-size: 40pt;
+			font-size: 30pt;
 			font-family: 'Armata', sans-serif;
 			text-align: center;
+				@media (min-width: 768px) {
+					font-size: 40pt;
+				}
+			}
+			h3 {
+			font-size: 20pt;
+			font-family: 'Armata', sans-serif;
+			text-align: center;
+					@media (min-width: 768px) {
+					font-size: 30pt;
+				}
 			}
 			.school-logos {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 			padding: 0;
+			margin: 1em;
 				li {
 				list-style-type: none;
 				padding: 1em;

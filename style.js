@@ -2,6 +2,17 @@ const left = document.getElementsByClassName("left");
 const right = document.getElementsByClassName("right");
 
 $(document).ready(function (){
+
+	// Nav bar fade in
+	$(window).scroll(function(){
+		if ($(this).scrollTop() >450) {
+			$(".navbar").fadeIn(700);
+		} else {
+			$(".navbar").fadeOut(500);
+		}
+	});
+
+
 	// Skills title fading in
 	$(".skills-title").css('opacity', 0);
 
@@ -33,16 +44,5 @@ $(document).ready(function (){
 		}, {offset: '70%'});
 	}
 });	
-
-$(document).ready(function (){
-
-	$(window).scroll(function(){
-		if ($(this).scrollTop() >450) {
-			$(".navbar").fadeIn(700);
-		} else {
-			$(".navbar").fadeOut(500);
-		}
-	});
-});
 
 
