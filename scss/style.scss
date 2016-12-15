@@ -1,30 +1,9 @@
-* {
-  box-sizing: border-box; 
-}
+* {box-sizing: border-box;}
+
 body {
 margin: 0;
-
-.pink {
-	position: absolute;
-	width: 50%;
-	z-index: 1;
-	top: -50px;
-	left: -10px;   
-}
-.blue {
-	position: absolute;
-	width: 60%;
-	z-index: 1;
-	right: 0;
-	top: 10px;
-}
-
-
 	.navbar {
-		display: none;
-		
-
-
+	display: none;
 		ul {
 		display: flex;
 		flex-direction: row;
@@ -32,16 +11,15 @@ margin: 0;
 		justify-content: space-around;
 		align-items: center;
 		width: 100%;
-	 	background-color: #283C63;
+	 	background-color: #444554;
 	 	margin: 0;
 	 	padding: 0;
-	 	z-index: 3;
-
+	 	z-index: 1000;
 			.name {
 			margin-right: auto;
 			font-size: 20pt;
 			font-family: 'Armata', sans-serif;
-			color: #928A97;
+			color: #FFF;
 			}
 			li {
 			list-style-type: none;
@@ -55,64 +33,65 @@ margin: 0;
 			}
 		}
 	}
+section {
+width: 100%;
+padding: 0 7%;
+display: table;
+margin: 0;
+max-width: none;
+height: 100vh;
 
-	section {
-	width: 100%;
-	padding: 0 7%;
-	display: table;
-	margin: 0;
-	max-width: none;
-	background-color: #FFF;
-	height: 100vh;
-	
+	.intro {
+	height: 90vh;
+	}
 
-
-		.intro {
-		height: 90vh;
+	.content {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	z-index: 2;
+	-webkit-animation-duration: 4s;
+		h1 {
+		font-family: 'Armata', sans-serif;
+		font-size: 60pt;
+		text-align: center;
 		}
-
-		.content {
-		display: table-cell;
-  		vertical-align: middle;
-  		position: absolute;
-		z-index: 2;
-		-webkit-animation-duration: 4s;
-		
-			
-			h1 {
-			font-family: 'Armata', sans-serif;
-			font-size: 60pt;
-			text-align: center;
-
-			
-			}
-			h2 {
-			font-family: 'Armata', sans-serif;
-			font-size: 30pt;
-			text-align: center;
-			margin-top: -70px;
-			}
+		h2 {
+		font-family: 'Armata', sans-serif;
+		font-size: 30pt;
+		text-align: center;
+		margin-top: -70px;
 		}
 	}
-	.about-me {
-		.about-content {
+}
 
+	.about-me {
+
+		.about-content {
+		position: relative;
+		margin-top: 100px;
 			h1 {
 			font-size: 40pt;
 			font-family: 'Armata', sans-serif;
 			text-align: center;
-			z-index: 2;
+			z-index: 3;
 			}
-			h3 {
-			font-size: 30pt;
-			font-family: 'Armata', sans-serif;
-			text-align: center;
-			}
+			
 			p {
 			font-family: 'Open Sans', sans-serif;
 			font-size: 20pt;
 			text-align: center;
-			z-index: 2;
+			z-index: 3;
+			position: relative;
+			}
+		}
+
+		.skills-content {
+			margin-top: 150px;
+			h3 {
+			font-size: 30pt;
+			font-family: 'Armata', sans-serif;
+			text-align: center;
 			}
 
 			.code-logos {
@@ -126,8 +105,7 @@ margin: 0;
 				li {
 				list-style-type: none;
 				align-self: center;
-				padding: 40px;
-
+				padding: 10px;
 					img {
 					width: 100px;
 					}
@@ -136,13 +114,14 @@ margin: 0;
 		}
 	}
 
+
 	.projects {
 	padding: 0;
 	margin-top: 150px;
-	background-color: #FBE8D3;
+	background-color: #FFF;
 		.project-content {
-			margin-left: 60px;
-			margin-right: 60px;
+		margin-left: 60px;
+		margin-right: 60px;
 			h1 {
 			font-size: 40pt;
 			font-family: 'Armata', sans-serif;
@@ -152,15 +131,20 @@ margin: 0;
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
-			align-items: stretch;
-			padding: 1em;
+			align-items: center;
+			background-color: #7C90A0;
+			padding: 2em;
+			margin: 4em;
+			box-shadow: 10px 10px 5px #888888;
+			border-radius: 40px;
+
 				li {
 				list-style-type: none;
+				align-self: center;
+
 					img {
 					width: 600px;
-					border: 3px solid #000;	
-					box-shadow: 10px 10px 5px #888888;
-
+					border: 3px solid #000;
 					}
 					h3 {
 					font-size: 20pt;
@@ -169,25 +153,40 @@ margin: 0;
 					}
 					p {
 					font-family: 'Open Sans', sans-serif;
-					font-size: 15pt;
+					font-size: 14pt;
 					text-align: center;
+					padding: 10px;
 					}
 				}
 			}
 		}
 	}
 	.contact {
-		.school-logos {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		padding: 0;
-			li {
-			list-style-type: none;
-			padding: 1em;
-				img {
-				width: 100px;
-				border-radius: 50%;
+	background: #444554; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#FFF, #444554); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFF, #444554); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFF, #444554); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFF, #444554); /* Standard syntax */
+	padding: 0;
+		.contact-content {
+		margin-top: 100px;
+			h1 {
+			font-size: 40pt;
+			font-family: 'Armata', sans-serif;
+			text-align: center;
+			}
+			.school-logos {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 0;
+				li {
+				list-style-type: none;
+				padding: 1em;
+					img {
+					width: 100px;
+					border-radius: 50%;
+					}
 				}
 			}
 		}

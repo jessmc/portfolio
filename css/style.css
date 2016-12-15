@@ -3,18 +3,6 @@
 
 body {
   margin: 0; }
-  body .pink {
-    position: absolute;
-    width: 50%;
-    z-index: 1;
-    top: -50px;
-    left: -10px; }
-  body .blue {
-    position: absolute;
-    width: 60%;
-    z-index: 1;
-    right: 0;
-    top: 10px; }
   body .navbar {
     display: none; }
     body .navbar ul {
@@ -24,15 +12,15 @@ body {
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      background-color: #283C63;
+      background-color: #444554;
       margin: 0;
       padding: 0;
-      z-index: 3; }
+      z-index: 1000; }
       body .navbar ul .name {
         margin-right: auto;
         font-size: 20pt;
         font-family: 'Armata', sans-serif;
-        color: #928A97; }
+        color: #FFF; }
       body .navbar ul li {
         list-style-type: none;
         padding: 10px; }
@@ -47,14 +35,13 @@ body {
     display: table;
     margin: 0;
     max-width: none;
-    background-color: #FFF;
     height: 100vh; }
     body section .intro {
       height: 90vh; }
     body section .content {
       display: table-cell;
       vertical-align: middle;
-      position: absolute;
+      position: relative;
       z-index: 2;
       -webkit-animation-duration: 4s; }
       body section .content h1 {
@@ -66,38 +53,44 @@ body {
         font-size: 30pt;
         text-align: center;
         margin-top: -70px; }
-  body .about-me .about-content h1 {
-    font-size: 40pt;
-    font-family: 'Armata', sans-serif;
-    text-align: center;
-    z-index: 2; }
-  body .about-me .about-content h3 {
-    font-size: 30pt;
-    font-family: 'Armata', sans-serif;
-    text-align: center; }
-  body .about-me .about-content p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20pt;
-    text-align: center;
-    z-index: 2; }
-  body .about-me .about-content .code-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0;
-    margin-top: -40px;
-    margin-left: 100px;
-    margin-right: 100px; }
-    body .about-me .about-content .code-logos li {
-      list-style-type: none;
-      align-self: center;
-      padding: 40px; }
-      body .about-me .about-content .code-logos li img {
-        width: 100px; }
+  body .about-me .about-content {
+    position: relative;
+    margin-top: 100px; }
+    body .about-me .about-content h1 {
+      font-size: 40pt;
+      font-family: 'Armata', sans-serif;
+      text-align: center;
+      z-index: 3; }
+    body .about-me .about-content p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20pt;
+      text-align: center;
+      z-index: 3;
+      position: relative; }
+  body .about-me .skills-content {
+    margin-top: 150px; }
+    body .about-me .skills-content h3 {
+      font-size: 30pt;
+      font-family: 'Armata', sans-serif;
+      text-align: center; }
+    body .about-me .skills-content .code-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 0;
+      margin-top: -40px;
+      margin-left: 100px;
+      margin-right: 100px; }
+      body .about-me .skills-content .code-logos li {
+        list-style-type: none;
+        align-self: center;
+        padding: 10px; }
+        body .about-me .skills-content .code-logos li img {
+          width: 100px; }
   body .projects {
     padding: 0;
     margin-top: 150px;
-    background-color: #FBE8D3; }
+    background-color: #FFF; }
     body .projects .project-content {
       margin-left: 60px;
       margin-right: 60px; }
@@ -109,32 +102,55 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: stretch;
-        padding: 1em; }
+        align-items: center;
+        background-color: #7C90A0;
+        padding: 2em;
+        margin: 4em;
+        box-shadow: 10px 10px 5px #888888;
+        border-radius: 40px; }
         body .projects .project-content ul li {
-          list-style-type: none; }
+          list-style-type: none;
+          align-self: center; }
           body .projects .project-content ul li img {
             width: 600px;
-            border: 3px solid #000;
-            box-shadow: 10px 10px 5px #888888; }
+            border: 3px solid #000; }
           body .projects .project-content ul li h3 {
             font-size: 20pt;
             font-family: 'Armata', sans-serif;
             text-align: center; }
           body .projects .project-content ul li p {
             font-family: 'Open Sans', sans-serif;
-            font-size: 15pt;
-            text-align: center; }
-  body .contact .school-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+            font-size: 14pt;
+            text-align: center;
+            padding: 10px; }
+  body .contact {
+    background: #444554;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#FFF, #444554);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FFF, #444554);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFF, #444554);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFF, #444554);
+    /* Standard syntax */
     padding: 0; }
-    body .contact .school-logos li {
-      list-style-type: none;
-      padding: 1em; }
-      body .contact .school-logos li img {
-        width: 100px;
-        border-radius: 50%; }
+    body .contact .contact-content {
+      margin-top: 100px; }
+      body .contact .contact-content h1 {
+        font-size: 40pt;
+        font-family: 'Armata', sans-serif;
+        text-align: center; }
+      body .contact .contact-content .school-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0; }
+        body .contact .contact-content .school-logos li {
+          list-style-type: none;
+          padding: 1em; }
+          body .contact .contact-content .school-logos li img {
+            width: 100px;
+            border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */

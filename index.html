@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery.waypoints.js"></script>
 <script src="style.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Armata|Open+Sans" rel="stylesheet">
 <title>Jessica Ciarelli</title>
@@ -12,7 +13,6 @@
 <body>
 
 <div class="navbar">
-
 	<ul>
 		<li class="name"><a href="http://www.jessicaciarel.li"></a>jessica ciarelli</li>
 		<li><a href="about">about</a></li>
@@ -20,10 +20,8 @@
 		<li><a href="contact">contact</a></li>
 		<li><a href="http://www.jessicaciarel.li/blog" target="_blank">blog</a></li>
 	</ul>
-
 </div>
-<img src="images/vectors/pink-vector.png" class="pink animated slideInLeft">
-<img src="images/vectors/blue-vector.png" class="blue animated slideInRight">
+
 
 	<section class="intro">
 
@@ -38,11 +36,11 @@
 		<div class="about-content">
 			<h1>about me</h1>
 			<p>I am a designer and developer in the DC metro area. I come from a background in Design and Merchandising from Drexel University, where I was able to put my creative side into practice with software like Adobe Photoshop and Illustrator. Realizing later that my passon for web development and design could mix, I began to take courses with Treehouse and Free Code Camp. Now I am an asipiring developer who loves learning as much as I can about JavaScript and responsive design. Visit my blog to learn more about me and what I've been recently learning. Or check out my portfolio, below to see what I've been working on.</p>
+		</div>
 
-
-
-			<h3>skills</h3>
-			<ul class = "code-logos">
+		<div class="skills-content animated">
+			<h3 class="skills-title animated">skills</h3>
+			<ul class="code-logos animated">
 			<li><img src="images/logos/html5.png"></li>
 			<li><img src="images/logos/css.png"></li>
 			<li><img src="images/logos/javascript.png"></li>
@@ -54,8 +52,8 @@
 			<li><img src="images/logos/illustrator.jpg"></li>
 			<li><img src="images/logos/git.png"></li>
 			</ul>
-
-			</div>
+		</div>
+		
 	</section>
 
 
@@ -63,45 +61,57 @@
 		<div class="project-content">
 		<h1>projects</h1>
 
-		<ul>
+		<ul class="left animated">
 			<li class="img"><img src="images/projects/mdeyedocs.png"></li>
 			<li>
 				<h3>Mdeyedocs</h3>
-				<p>fill in info here about the project and what you used to make it</p></li>
+				<p>Created a website for a local Ophthalmology Practice in NJ where visitors can educate themselves on eye care and learn about the facility and it’s doctors. <br>
+				<br>Made with:<br>
+				HTML, CSS</p></li>
 		</ul>
 
-		<ul>
+		<ul class="right animated">
 			<li>
 				<h3>Wikiview</h3>
-				<p>fill in info here about the project and what you used to make it</p></li>
+				<p>A Free Code Camp project. This viewer allows the user to enter a keyword to search for a relevant Wikipedia Page. Clicking the Surprise Me button takes the user to a random Wikipedia Page. The design is my take on a "google-like" page where there is no clutter or distractions from your search. <br>
+				<br>Made with:<br>
+				HTML, CSS, JQuery, Wikipedia's API, Bootstrap</p></li>
 			<li><img src="images/projects/wikiview.png"></li>
 		</ul>
 
-		<ul>
+		<ul class="left animated">
 			<li><img src="images/projects/weatherapp.png"></li>
 			<li>
 				<h3>Weather App</h3>
-				<p>fill in info here about the project and what you used to make it</p></li>
+				<p>An application that shows weather in the users current location, can see a different image and icon depending on the weather, and can toggle between Fahrenheit and Celsius. <br>
+				<br>Made with:<br>
+				Open Weather's API, JSON, JQuery, HTML, CSS</p></li>
 		</ul>
 
-		<ul>
+		<ul class="right animated">
 			<li>
 				<h3>Harry Potter Quote Machine</h3>
-				<p>fill in info here about the project and what you used to make it</p></li>
+				<p>A Free Code Camp Project, featuring quotes from the Harry Potter books. I created a library of quotes for a JavaScript function to cycle through randomly after the user clicks the New Quote button. The user also has the ability to submit to their Twitter account the quote by clicking the Tweet button. <br>
+				<br>Made with:<br>
+				HTML, CSS, JavaScript, Bootstrap</p></li>
 			<li><img src="images/projects/hpquote.png"></li>
 		</ul>
 
-		<ul>
+		<ul class="left animated">
 			<li><img src="images/projects/portfolio.png"></li>
 			<li>
 				<h3>Bootstrap Portfolio</h3>
-				<p>fill in info here about the project and what you used to make it</p></li>
+				<p>My first portfolio! This was a Free Code Camp project that wanted us to incoroporate our Bootstrap skills into a responsive website about me and what I've learned so far.<br>
+				<br>Made with: <br>
+				HTML, CSS, Bootstrap</p></li>
 		</ul>
 
-		<ul>
+		<ul class="right animated">
 			<li>
 				<h3>Tama Tribute Page</h3>
-				<p>fill in info here about the project and what you used to make it</p></li>
+				<p>A Free Code Camp project featuring Tama the Train Station Master. This is my first project incorportating Bootstrap into the layout and getting re-familiarized with HTML and CSS. <br>
+				<br> Made with: <br>
+				HTML, CSS, Bootstrap</p></li>
 			<li><img src="images/projects/tama.png"></li>
 		</ul>
 		</div>
@@ -111,6 +121,9 @@
 
 
 	<section class="contact">
+		<div class="contact-content">
+		<h1>contact me</h1>
+
 		<ul class="school-logos">
 			<li><img src="images/logos/new/treehouse.png"></li>
 			<li><img src="images/logos/new/freecodecamp.png"></li>
