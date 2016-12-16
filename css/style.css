@@ -41,12 +41,14 @@ body {
             body .navbar ul li a {
               font-size: 10pt; } }
   body section {
-    width: 100%;
-    padding: 0 7%;
     display: table;
     margin: 0;
     max-width: none;
-    height: 100vh; }
+    height: 100vh;
+    width: 100%; }
+    @media (min-width: 768px) {
+      body section {
+        padding: 0 7%; } }
     body section .intro {
       height: 90vh; }
     body section .content {
@@ -57,17 +59,29 @@ body {
       -webkit-animation-duration: 4s; }
       body section .content h1 {
         font-family: 'Armata', sans-serif;
-        font-size: 60pt;
+        font-size: 40pt;
         text-align: center; }
+        @media (min-width: 768px) {
+          body section .content h1 {
+            font-size: 60pt; } }
       body section .content h2 {
         font-family: 'Armata', sans-serif;
-        font-size: 30pt;
+        font-size: 20pt;
         text-align: center;
-        margin-top: -70px; }
+        margin-top: -50px; }
+        @media (min-width: 768px) {
+          body section .content h2 {
+            font-size: 30pt;
+            margin-top: -70px; } }
   body .about-me {
     margin-top: 150px; }
     body .about-me .about-content {
-      position: relative; }
+      position: relative;
+      margin-left: 10px;
+      margin-right: 10px; }
+      @media (min-width: 768px) {
+        body .about-me .about-content {
+          margin: 0; } }
       body .about-me .about-content h1 {
         font-size: 30pt;
         font-family: 'Armata', sans-serif;
@@ -109,79 +123,67 @@ body {
           align-self: center;
           padding: 10px; }
           body .about-me .skills-content .code-logos li img {
-            width: 100px; }
+            width: 80px; }
+            @media (min-width: 769px) {
+              body .about-me .skills-content .code-logos li img {
+                width: 100px; } }
   body .projects {
     padding: 0;
     margin-top: 150px;
     background-color: #FFF; }
     @media (min-width: 768px) {
       body .projects .project-content {
-        margin-left: 60px;
-        margin-right: 60px; } }
+        margin: 2em; } }
+    @media (min-width: 900px) {
+      body .projects .project-content {
+        margin: 4em; } }
+    @media (min-width: 1000px) {
+      body .projects .project-content {
+        margin: 10em; } }
     body .projects .project-content h1 {
       font-size: 30pt;
       font-family: 'Armata', sans-serif;
       text-align: center; }
-      @media (min-width: 768px) {
-        body .projects .project-content h1 {
-          font-size: 40pt; } }
     body .projects .project-content .boxes {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      width: 100%; }
       body .projects .project-content .boxes li {
         list-style-type: none;
-        padding: 2em; }
-        @media (min-width: 800px) {
-          body .projects .project-content .boxes li {
-            padding: 0;
-            margin: 0; } }
+        padding: 1em;
+        align-self: center; }
         body .projects .project-content .boxes li ul {
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
+          justify-content: center;
           align-items: center;
           background-color: #7C90A0;
           box-shadow: 10px 10px 5px #888888;
           padding: 0; }
-          @media (min-width: 800px) {
-            body .projects .project-content .boxes li ul {
-              flex-direction: row;
-              padding: 2em;
-              margin: 2em;
-              border-radius: 40px; } }
+          body .projects .project-content .boxes li ul .project-detail {
+            background-color: rgba(255, 255, 255, 0.5);
+            margin: 1em; }
           body .projects .project-content .boxes li ul li {
             list-style-type: none;
-            align-self: center;
-            padding: 10px; }
+            align-self: center; }
             body .projects .project-content .boxes li ul li img {
               padding: 0;
               margin: 0;
               width: 100%;
               border: 3px solid black; }
-              @media (min-width: 1050px) {
-                body .projects .project-content .boxes li ul li img {
-                  width: 600px;
-                  padding: 0;
-                  border: 3px solid #000; } }
             body .projects .project-content .boxes li ul li h3 {
               font-size: 14pt;
               font-family: 'Armata', sans-serif;
               text-align: center; }
-              @media (min-width: 800px) {
-                body .projects .project-content .boxes li ul li h3 {
-                  font-size: 20pt; } }
             body .projects .project-content .boxes li ul li p {
               font-family: 'Open Sans', sans-serif;
               font-size: 12pt;
               text-align: center; }
-              @media (min-width: 800px) {
-                body .projects .project-content .boxes li ul li p {
-                  font-size: 14pt;
-                  padding: 10px; } }
   body .contact {
     background: #444554;
     /* For browsers that do not support gradients */
@@ -193,7 +195,8 @@ body {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(#FFF, #444554);
     /* Standard syntax */
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
     body .contact .contact-content {
       margin-top: 100px; }
       body .contact .contact-content h1 {

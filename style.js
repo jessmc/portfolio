@@ -27,22 +27,7 @@ $(document).ready(function (){
 		$(".code-logos").addClass('fadeInUp');
 		}, {offset: '70%'});
 
-	// Projects fading in from the left
-	for (let i=0; i < left.length; i++) {
-	$(left[i]).css('opacity', 0);
-
-	$(left[i]).waypoint(function() {
-		$(left[i]).addClass('fadeInLeft');
-		}, {offset: '70%'});
-	}
-	// Projects fading in from the right
-	for (let i=0; i < right.length; i++) {
-	$(right[i]).css('opacity', 0);
-
-	$(right[i]).waypoint(function() {
-		$(right[i]).addClass('fadeInRight');
-		}, {offset: '70%'});
-	}
+	
 });	
 
 
