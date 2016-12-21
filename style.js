@@ -1,6 +1,3 @@
-const left = document.getElementsByClassName("left");
-const right = document.getElementsByClassName("right");
-
 $(document).ready(function (){
 
 	// Nav bar fade in
@@ -12,6 +9,12 @@ $(document).ready(function (){
 		}
 	});
 
+	// About me fading in
+	$(".about-content").css('opacity', 0);
+
+	$(".about-content").waypoint(function() {
+		$(".about-content").addClass('fadeIn');
+		}, {offset: '50%'});
 
 	// Skills title fading in
 	$(".skills-title").css('opacity', 0);
