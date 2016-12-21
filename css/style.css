@@ -68,7 +68,8 @@ body {
         color: #FFF;
         text-shadow: 2px 2px #000;
         font-size: 40pt;
-        text-align: center; }
+        text-align: center;
+        letter-spacing: 2px; }
         @media (min-width: 768px) {
           body section .content h1 {
             font-size: 60pt; } }
@@ -76,7 +77,8 @@ body {
         font-family: 'Armata', sans-serif;
         font-size: 20pt;
         text-align: center;
-        margin-top: -50px; }
+        margin-top: -50px;
+        letter-spacing: 2px; }
         @media (min-width: 768px) {
           body section .content h2 {
             font-size: 30pt;
@@ -103,7 +105,8 @@ body {
         font-family: 'Armata', sans-serif;
         text-align: center;
         z-index: 3;
-        color: #FFF; }
+        color: #FFF;
+        letter-spacing: 2px; }
         @media (min-width: 768px) {
           body .about-me .about-content h1 {
             font-size: 40pt; } }
@@ -126,7 +129,8 @@ body {
         font-size: 24pt;
         font-family: 'Armata', sans-serif;
         text-align: center;
-        padding: 1em; }
+        padding: 1em;
+        letter-spacing: 2px; }
         @media (min-width: 768px) {
           body .about-me .skills-content h3 {
             font-size: 30pt; } }
@@ -152,72 +156,107 @@ body {
                 width: 100px; } }
   body .projects {
     padding: 0;
-    margin-top: 50px;
-    background-color: #FFF; }
-    @media (min-width: 768px) {
-      body .projects .project-content {
-        margin: 2em; } }
-    @media (min-width: 900px) {
-      body .projects .project-content {
-        margin: 4em; } }
-    @media (min-width: 1000px) {
-      body .projects .project-content {
-        margin: 10em; } }
-    body .projects .project-content h1 {
+    background-color: #F0F0F0; }
+    body .projects h1 {
       font-size: 30pt;
       font-family: 'Armata', sans-serif;
-      text-align: center; }
-    body .projects .project-content .boxes {
+      text-align: center;
+      z-index: 3;
+      letter-spacing: 2px; }
+    body .projects .project-cards {
       display: flex;
       flex-wrap: wrap;
-      padding: 0;
-      margin: 0; }
-      body .projects .project-content .boxes li {
-        list-style-type: none;
-        padding: 1em; }
-        body .projects .project-content .boxes li ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      body .projects .project-cards .cards-item {
+        display: flex;
+        padding: 1rem; }
+        @media (min-width: 40rem) {
+          body .projects .project-cards .cards-item {
+            width: 50%; } }
+        @media (min-width: 56rem) {
+          body .projects .project-cards .cards-item {
+            width: 33.3333%; } }
+        body .projects .project-cards .cards-item .card {
+          background-color: white;
+          border: 8px solid #3D4949;
+          border-radius: 0.25rem;
+          box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background-color: #7C90A0;
-          box-shadow: 10px 10px 5px #888888;
-          padding: 0; }
-          body .projects .project-content .boxes li ul .project-detail {
-            background-color: rgba(255, 255, 255, 0.5);
-            margin: 1em; }
-          body .projects .project-content .boxes li ul li {
-            list-style-type: none;
-            align-self: center; }
-            body .projects .project-content .boxes li ul li img {
-              padding: 0;
-              margin: 0;
-              width: 100%;
-              border: 3px solid black; }
-            body .projects .project-content .boxes li ul li h3 {
-              font-size: 14pt;
+          overflow: hidden; }
+          body .projects .project-cards .cards-item .card .card-content {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            padding: 1rem; }
+            body .projects .project-cards .cards-item .card .card-content .card-title {
               font-family: 'Armata', sans-serif;
+              font-size: 1.25rem;
+              font-weight: 300;
+              letter-spacing: 2px;
               text-align: center; }
-            body .projects .project-content .boxes li ul li p {
+            body .projects .project-cards .cards-item .card .card-content .card-text {
               font-family: 'Open Sans', sans-serif;
-              font-size: 12pt;
+              flex: 1 1 auto;
+              font-size: 0.875rem;
+              line-height: 1.5;
+              margin-bottom: 1.25rem; }
+            body .projects .project-cards .cards-item .card .card-content .project-icons {
+              display: block;
+              width: 100%;
               text-align: center; }
+              body .projects .project-cards .cards-item .card .card-content .project-icons .fa {
+                padding: 10px; }
+                body .projects .project-cards .cards-item .card .card-content .project-icons .fa:hover {
+                  color: #6CB9B9; }
+          body .projects .project-cards .cards-item .card .project-img {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+            border-bottom: 2px solid #3D4949;
+            transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); }
+            body .projects .project-cards .cards-item .card .project-img::before {
+              content: "";
+              display: block;
+              padding-top: 56.25%; }
+            @media (min-width: 40rem) {
+              body .projects .project-cards .cards-item .card .project-img::before {
+                padding-top: 66.6%; } }
+          body .projects .project-cards .cards-item .card img {
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle; }
+          body .projects .project-cards .cards-item .card .project-img-mdeyedocs {
+            background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/mdeyedocs.png); }
+          body .projects .project-cards .cards-item .card .project-img-wikiview {
+            background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/wikiview.png); }
+          body .projects .project-cards .cards-item .card .project-img-weatherapp {
+            background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/weatherapp.png); }
+          body .projects .project-cards .cards-item .card .project-img-hpquote {
+            background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/hpquote.png); }
+          body .projects .project-cards .cards-item .card .project-img-portfolio {
+            background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/portfolio.png); }
+          body .projects .project-cards .cards-item .card .project-img-tama {
+            background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/tama.png); }
   body .contact {
-    background: #3D4949;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#FFF, #3D4949);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FFF, #3D4949);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FFF, #3D4949);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FFF, #3D4949);
-    /* Standard syntax */
+    background-color: #6CB9B9;
     padding: 0;
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto; }
     body .contact .contact-content {
-      margin-top: 100px; }
+      align-self: flex-end;
+      background-color: #3D4949;
+      margin: 1rem;
+      padding: 1rem;
+      width: 100%; }
       body .contact .contact-content h1 {
+        color: #FFF;
         font-size: 30pt;
         font-family: 'Armata', sans-serif;
         text-align: center; }
@@ -225,6 +264,7 @@ body {
           body .contact .contact-content h1 {
             font-size: 40pt; } }
       body .contact .contact-content h3 {
+        color: #FFF;
         font-size: 20pt;
         font-family: 'Armata', sans-serif;
         text-align: center; }
@@ -242,6 +282,7 @@ body {
           padding: 1em; }
           body .contact .contact-content .school-logos li img {
             width: 100px;
-            border-radius: 50%; }
+            border-radius: 50%;
+            background-color: #FFF; }
 
 /*# sourceMappingURL=style.css.map */

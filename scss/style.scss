@@ -63,6 +63,7 @@ margin: 0;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	
 	}
 
 
@@ -98,12 +99,14 @@ width: 100%;
 	position: relative;
 	z-index: 2;
 	-webkit-animation-duration: 4s;
+	
 		h1 {
 		font-family: 'Armata', sans-serif;
 		color: #FFF;
 		text-shadow: 2px 2px #000;
 		font-size: 40pt;
 		text-align: center;
+		letter-spacing: 2px;
 			@media (min-width: 768px) {
 				font-size: 60pt;
 			}
@@ -113,6 +116,7 @@ width: 100%;
 		font-size: 20pt;
 		text-align: center;
 		margin-top: -50px;
+		letter-spacing: 2px;
 			@media (min-width: 768px) {
 			font-size: 30pt;
 			margin-top: -70px;
@@ -150,6 +154,7 @@ width: 100%;
 			text-align: center;
 			z-index: 3;
 			color: #FFF;
+			letter-spacing: 2px;
 			
 				@media (min-width: 768px) {
 				font-size: 40pt;
@@ -180,6 +185,7 @@ width: 100%;
 			font-family: 'Armata', sans-serif;
 			text-align: center;
 			padding: 1em;
+			letter-spacing: 2px;
 
 				@media (min-width: 768px) {
 				font-size: 30pt;
@@ -217,104 +223,155 @@ width: 100%;
 // Projects Section 
 
 	.projects {
-
 	padding: 0;
-	margin-top: 50px;
-	background-color: #FFF;
+	
+	background-color: #F0F0F0;
+		
+		h1 {
+		font-size: 30pt;
+		font-family: 'Armata', sans-serif;
+		text-align: center;
+		z-index: 3;
+		letter-spacing: 2px;
+		}
 
-		.project-content {
-			@media (min-width: 768px) {
-				margin: 2em;
-			}
-			@media (min-width: 900px) {
-				margin: 4em;
-			}
-			@media (min-width: 1000px) {
-				margin: 10em;
-			}
+		.project-cards {
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
 
-
-			h1 {
-			font-size: 30pt;
-			font-family: 'Armata', sans-serif;
-			text-align: center;
-			}
-
-			.boxes {
+			.cards-item {
 			display: flex;
-			flex-wrap: wrap;
-			padding: 0;
-			margin:0;
-			
-			@media (min-width: 768px) {
-				
+			padding: 1rem;
+			  @media(min-width: 40rem) {
+			  width: 50%;
+			  }
+			  @media(min-width: 56rem) {
+			  width: 33.3333%;
+			  }
 
-			}
-				
-				li {
-				list-style-type: none;
-				padding: 1em;
-				
+				.card {
+				background-color: white;
+				border: 8px solid #3D4949;
+				border-radius: 0.25rem;
+				box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+				display: flex;
+				flex-direction: column;
+				overflow: hidden;
+
 					
 
-					ul {
+					.card-content {
 					display: flex;
+					flex: 1 1 auto;
 					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-					background-color: #7C90A0;
-					box-shadow: 10px 10px 5px #888888;
-					padding: 0;
-					
-					.project-detail {
-					background-color: rgba(255, 255, 255, 0.5);
-					margin: 1em;
-					}	
+					padding: 1rem;
 
-						li {
-						list-style-type: none;
-						align-self: center;
-						
-
-							img {
-							padding: 0;
-							margin: 0;
-							width: 100%;
-							border: 3px solid black;
+							.card-title {
+							font-family: 'Armata', sans-serif;
+							font-size: 1.25rem;
+							font-weight: 300;
+							letter-spacing: 2px;
+							text-align: center;
 							}
-							
-								h3 {
-								font-size: 14pt;
-								font-family: 'Armata', sans-serif;
+
+							.card-text {
+							font-family: 'Open Sans', sans-serif;
+							flex: 1 1 auto;
+							font-size: 0.875rem;
+							line-height: 1.5;
+							margin-bottom: 1.25rem;	
+							}
+
+							.project-icons {
+								display: block;
+								width: 100%;
 								text-align: center;
-								}
-								p {
-								font-family: 'Open Sans', sans-serif;
-								font-size: 12pt;
-								text-align: center;
-								}
-							
-						}
+									.fa {
+										padding: 10px;
+										 &:hover {
+										 	color: #6CB9B9;
+										 }
+									}
+							}
+
+
+
 					}
-				}	
-			}	
+
+					.project-img {
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					overflow: hidden;
+					position: relative;
+					border-bottom: 2px solid #3D4949;
+					transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+						&::before {
+						content: "";
+						display: block;
+					    padding-top: 56.25%; // 16:9 aspect ratio
+					  	}
+					  	@media(min-width: 40rem) {
+					    	&::before {
+					    	padding-top: 66.6%; // 3:2 aspect ratio
+					   		 }
+					  	}
+					}
+
+					img {
+  					height: auto;
+ 					 max-width: 100%;
+ 					 vertical-align: middle;
+						}
+
+					.project-img-mdeyedocs {
+						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/mdeyedocs.png);
+					}
+					.project-img-wikiview {
+						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/wikiview.png);
+					}
+					.project-img-weatherapp {
+						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/weatherapp.png);
+					}
+					.project-img-hpquote {
+						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/hpquote.png);
+					}
+					.project-img-portfolio {
+						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/portfolio.png);
+					}
+					.project-img-tama {
+						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/tama.png);
+					}
+				}
+			}
 		}
 	}
+	
+	
 
 
 // Contact Me Section	
 	.contact {
-	background: #3D4949; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#FFF, #3D4949); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#FFF, #3D4949); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#FFF, #3D4949); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#FFF, #3D4949); /* Standard syntax */
+	background-color: #6CB9B9;
 	padding: 0;
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: auto;
+
 
 		.contact-content {
-		margin-top: 100px;
+		align-self: flex-end;
+		background-color: #3D4949;
+		margin: 1rem;
+		padding: 1rem;
+		width: 100%;
+
 			h1 {
+			color: #FFF;
 			font-size: 30pt;
 			font-family: 'Armata', sans-serif;
 			text-align: center;
@@ -323,6 +380,7 @@ width: 100%;
 				}
 			}
 			h3 {
+			color: #FFF;
 			font-size: 20pt;
 			font-family: 'Armata', sans-serif;
 			text-align: center;
@@ -336,12 +394,14 @@ width: 100%;
 			justify-content: center;
 			padding: 0;
 			margin: 1em;
+
 				li {
 				list-style-type: none;
 				padding: 1em;
 					img {
 					width: 100px;
 					border-radius: 50%;
+					background-color: #FFF;
 					}
 				}
 			}
