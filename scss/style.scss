@@ -24,30 +24,30 @@ margin: 0;
 				margin-right: auto;	
 			}
 				a {
-
-				@media (min-width: 768px) {
-					font-size: 20pt;
-				}
 				font-size: 14pt;
 				font-family: 'Armata', sans-serif;
 				color: #FFF;
+					@media (min-width: 768px) {
+					font-size: 20pt;
+					}
 					&:hover {
 						@media (min-width: 768px) {
 						font-size: 22pt;	
 						}
-						
 					}
 				}
 			}
 			li {
 			list-style-type: none;
-			padding: 20px;
+			padding: 5px;
+				@media (min-width: 768px) {
+					padding: 20px;
+				}
 				a {
 				font-family: 'Armata', sans-serif;
 				font-size: 8pt;
 				text-decoration: none;
 				color: #FFF;
-					
 					@media (min-width: 768px) {
 					font-size: 10pt;
 				}
@@ -58,12 +58,11 @@ margin: 0;
 
 
 #background {
-	background: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/background.jpeg) no-repeat center center; 
+	background: url(images/background-min.jpeg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	
 	}
 
 
@@ -332,22 +331,22 @@ width: 100%;
 						}
 
 					.project-img-mdeyedocs {
-						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/mdeyedocs.png);
+						background-image: url(images/projects/mdeyedocs.png);
 					}
 					.project-img-wikiview {
-						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/wikiview.png);
+						background-image: url(images/projects/wikiview.png);
 					}
 					.project-img-weatherapp {
-						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/weatherapp.png);
+						background-image: url(images/projects/weatherapp.png);
 					}
 					.project-img-hpquote {
-						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/hpquote.png);
+						background-image: url(images/projects/hpquote.png);
 					}
 					.project-img-portfolio {
-						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/portfolio.png);
+						background-image: url(images/projects/portfolio.png);
 					}
 					.project-img-tama {
-						background-image: url(file:///Users/jessicaciarelli/Desktop/portfolio/images/projects/tama.png);
+						background-image: url(images/projects/tama.png);
 					}
 				}
 			}
@@ -384,7 +383,7 @@ width: 100%;
 			}
 			h3 {
 			color: #FFF;
-			font-size: 20pt;
+			font-size: 14pt;
 			font-family: 'Armata', sans-serif;
 			text-align: center;
 					@media (min-width: 768px) {
