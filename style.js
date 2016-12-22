@@ -9,12 +9,18 @@ $(document).ready(function (){
 		}
 	});
 
-	// About me fading in
-	$(".about-content").css('opacity', 0);
+	// About me title and paragraph fading in
+	$(".about-title").css('opacity', 0);
 
-	$(".about-content").waypoint(function() {
-		$(".about-content").addClass('fadeIn');
-		}, {offset: '50%'});
+	$(".about-title").waypoint(function() {
+		$(".about-title").addClass('fadeIn');
+		}, {offset: '70%'});
+
+	$(".about-para").css('opacity', 0);
+
+	$(".about-para").waypoint(function() {
+		$(".about-para").addClass('fadeIn');
+		}, {offset: '70%'});
 
 	// Skills title fading in
 	$(".skills-title").css('opacity', 0);
