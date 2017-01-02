@@ -333,6 +333,9 @@ width: 100%;
 					.project-img-mdeyedocs {
 						background-image: url(images/projects/mdeyedocs.png);
 					}
+					.project-img-twitch {
+						background-image: url(images/projects/twitch.png);
+					}
 					.project-img-wikiview {
 						background-image: url(images/projects/wikiview.png);
 					}
@@ -383,27 +386,55 @@ width: 100%;
 			}
 			h3 {
 			color: #FFF;
-			font-size: 14pt;
+			font-size: 12pt;
 			font-family: 'Armata', sans-serif;
-			text-align: center;
+			text-align: left;
+			margin: 10px;
 					@media (min-width: 768px) {
-					font-size: 30pt;
+					font-size: 20pt;
 				}
 			}
-			.school-logos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			padding: 0;
-			margin: 1em;
 
-				li {
+
+			.contact-boxes {
+				display: flex;
 				list-style-type: none;
-				padding: 1em;
-					img {
-					width: 100px;
-					border-radius: 50%;
-					background-color: #FFF;
+				flex-direction: column;
+				padding: 0;
+				margin: 0;
+					@media (min-width: 768px) {
+						flex-direction: row;
+						justify-content: space-around;
+						margin-bottom: 30px;
+					}
+
+					.email {
+						list-style-type: none;
+						background-color: #FFF;
+						box-shadow: 0 20px 40px 14px rgba(0,0,0,0.5);
+						padding: 10px;
+						border: 30px solid #6CB9B9;
+						
+
+						h3 {
+							color: #000;
+							}
+					}
+
+				.school-logos {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				padding: 0;
+				
+
+					li {
+					list-style-type: none;
+					padding: 1em;
+						img {
+						width: 100px;
+						border-radius: 50%;
+						}
 					}
 				}
 			}

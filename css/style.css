@@ -238,6 +238,8 @@ body {
             vertical-align: middle; }
           body .projects .project-cards .cards-item .card .project-img-mdeyedocs {
             background-image: url(images/projects/mdeyedocs.png); }
+          body .projects .project-cards .cards-item .card .project-img-twitch {
+            background-image: url(images/projects/twitch.png); }
           body .projects .project-cards .cards-item .card .project-img-wikiview {
             background-image: url(images/projects/wikiview.png); }
           body .projects .project-cards .cards-item .card .project-img-weatherapp {
@@ -270,24 +272,42 @@ body {
             font-size: 40pt; } }
       body .contact .contact-content h3 {
         color: #FFF;
-        font-size: 14pt;
+        font-size: 12pt;
         font-family: 'Armata', sans-serif;
-        text-align: center; }
+        text-align: left;
+        margin: 10px; }
         @media (min-width: 768px) {
           body .contact .contact-content h3 {
-            font-size: 30pt; } }
-      body .contact .contact-content .school-logos {
+            font-size: 20pt; } }
+      body .contact .contact-content .contact-boxes {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        list-style-type: none;
+        flex-direction: column;
         padding: 0;
-        margin: 1em; }
-        body .contact .contact-content .school-logos li {
+        margin: 0; }
+        @media (min-width: 768px) {
+          body .contact .contact-content .contact-boxes {
+            flex-direction: row;
+            justify-content: space-around;
+            margin-bottom: 30px; } }
+        body .contact .contact-content .contact-boxes .email {
           list-style-type: none;
-          padding: 1em; }
-          body .contact .contact-content .school-logos li img {
-            width: 100px;
-            border-radius: 50%;
-            background-color: #FFF; }
+          background-color: #FFF;
+          box-shadow: 0 20px 40px 14px rgba(0, 0, 0, 0.5);
+          padding: 10px;
+          border: 30px solid #6CB9B9; }
+          body .contact .contact-content .contact-boxes .email h3 {
+            color: #000; }
+        body .contact .contact-content .contact-boxes .school-logos {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding: 0; }
+          body .contact .contact-content .contact-boxes .school-logos li {
+            list-style-type: none;
+            padding: 1em; }
+            body .contact .contact-content .contact-boxes .school-logos li img {
+              width: 100px;
+              border-radius: 50%; }
 
 /*# sourceMappingURL=style.css.map */
