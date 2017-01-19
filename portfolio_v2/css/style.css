@@ -1,0 +1,354 @@
+body {
+  margin: 0;
+  padding: 0; }
+  body .navbar {
+    display: none; }
+    body .navbar ul {
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      background-color: #4F5E7F;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      z-index: 1000; }
+      @media (min-width: 768px) {
+        body .navbar ul .name {
+          margin-right: auto; } }
+      body .navbar ul .name a {
+        font-size: 14pt;
+        font-family: 'Sofia', cursive;
+        color: #FFF; }
+        @media (min-width: 768px) {
+          body .navbar ul .name a {
+            font-size: 20pt; } }
+        @media (min-width: 768px) {
+          body .navbar ul .name a:hover {
+            font-size: 22pt; } }
+      body .navbar ul li {
+        list-style-type: none;
+        padding: 5px; }
+        @media (min-width: 768px) {
+          body .navbar ul li {
+            padding: 20px; } }
+        @media (min-width: 1000px) {
+          body .navbar ul li {
+            margin-left: 50px;
+            margin-right: 50px; } }
+        body .navbar ul li a {
+          font-family: 'Fauna One', serif;
+          font-size: 8pt;
+          text-decoration: none;
+          color: #FFF; }
+          @media (min-width: 768px) {
+            body .navbar ul li a {
+              font-size: 10pt; } }
+  body .header {
+    z-index: 1;
+    position: relative; }
+    body .header .content {
+      vertical-align: middle;
+      z-index: 2;
+      -webkit-animation-duration: 4s; }
+      body .header .content .me {
+        width: 200px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 200px; }
+      body .header .content h1 {
+        font-family: 'Sofia', cursive;
+        position: relative;
+        color: #FFF;
+        font-size: 40pt;
+        text-align: center;
+        margin-top: 100px;
+        top: 100px; }
+        @media (min-width: 768px) {
+          body .header .content h1 {
+            font-size: 60pt; } }
+      body .header .content h2 {
+        color: #4F5E7F;
+        font-family: 'Fauna One', serif;
+        font-size: 18pt;
+        text-align: center;
+        padding: 100px;
+        letter-spacing: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: -60px; }
+        @media (min-width: 768px) {
+          body .header .content h2 {
+            font-size: 30pt;
+            margin-top: -80px;
+            letter-spacing: 14px; } }
+    body .header .intro {
+      margin-top: -50px; }
+    body .header .intro:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      overflow: visible;
+      width: 100%;
+      height: 1000px;
+      background: #4AC6B7;
+      z-index: -1;
+      -webkit-transform: skewY(-2deg);
+      -moz-transform: skewY(-2deg);
+      -ms-transform: skewY(-2deg);
+      -o-transform: skewY(-2deg);
+      transform: skewY(-2deg);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: initial; }
+  body .about-me {
+    margin-top: 120px; }
+    @media (min-width: 900px) {
+      body .about-me {
+        margin-left: 200px;
+        margin-right: 200px; } }
+    body .about-me .about-content {
+      position: relative;
+      border-top: 5px solid #FF7070;
+      border-bottom: 5px solid #FF7070;
+      padding: 1em;
+      margin-bottom: 50px; }
+      @media (min-width: 768px) {
+        body .about-me .about-content {
+          margin-left: 0;
+          margin-right: 0;
+          margin-top: 150px; } }
+      body .about-me .about-content h1 {
+        font-size: 25pt;
+        font-family: 'Sofia', cursive;
+        text-align: center;
+        z-index: 3;
+        color: #4F5E7F;
+        letter-spacing: 2px; }
+        @media (min-width: 768px) {
+          body .about-me .about-content h1 {
+            font-size: 30pt; } }
+      body .about-me .about-content p {
+        font-size: 14pt;
+        font-family: 'Fauna One', serif;
+        text-align: center;
+        z-index: 3;
+        position: relative;
+        color: #4F5E7F; }
+        @media (min-width: 768px) {
+          body .about-me .about-content p {
+            font-size: 18pt; } }
+    body .about-me .skills-content {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      background-color: #FFF;
+      border: 10px solid #4AC6B7; }
+      body .about-me .skills-content h3 {
+        font-size: 24pt;
+        font-family: 'Sofia', cursive;
+        text-align: center;
+        padding: 1em;
+        letter-spacing: 2px;
+        color: #4F5E7F; }
+        @media (min-width: 768px) {
+          body .about-me .skills-content h3 {
+            font-size: 30pt; } }
+      body .about-me .skills-content .code-logos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin-top: -50px; }
+        @media (min-width: 768px) {
+          body .about-me .skills-content .code-logos {
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top: -80px; } }
+        body .about-me .skills-content .code-logos li {
+          list-style-type: none;
+          align-self: center;
+          padding: 10px; }
+          body .about-me .skills-content .code-logos li img {
+            width: 80px; }
+            @media (min-width: 769px) {
+              body .about-me .skills-content .code-logos li img {
+                width: 100px; } }
+  body .projects {
+    margin-top: 200px;
+    padding: 0;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    border-top: 10px dotted #FF7070; }
+    body .projects h1 {
+      font-size: 50pt;
+      font-family: 'Sofia', cursive;
+      text-align: center;
+      z-index: 3;
+      letter-spacing: 2px;
+      color: #4F5E7F; }
+    body .projects .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      body .projects .project-cards .cards-item {
+        display: flex;
+        padding: 1.5rem; }
+        @media (min-width: 40rem) {
+          body .projects .project-cards .cards-item {
+            width: 50%; } }
+        @media (min-width: 56rem) {
+          body .projects .project-cards .cards-item {
+            width: 30%; } }
+        @media (max-width: 83rem) and (min-width: 41rem) {
+          body .projects .project-cards .cards-item {
+            width: 40%;
+            padding: 1rem; } }
+        body .projects .project-cards .cards-item .card {
+          background-color: white;
+          border: 8px solid #4F5E7F;
+          border-radius: 0.25rem;
+          box-shadow: 0 20px 40px 14px rgba(0, 0, 0, 0.5);
+          display: flex;
+          flex-direction: column;
+          overflow: hidden; }
+          body .projects .project-cards .cards-item .card .card-content {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            padding: 1rem; }
+            body .projects .project-cards .cards-item .card .card-content .card-title {
+              font-family: 'Fauna One', serif;
+              font-size: 1.25rem;
+              font-weight: 300;
+              text-align: center; }
+            body .projects .project-cards .cards-item .card .card-content .card-text {
+              font-family: 'Fauna One', serif;
+              flex: 1 1 auto;
+              font-size: 0.875rem;
+              line-height: 1.5;
+              margin-bottom: 1.25rem;
+              text-align: center; }
+            body .projects .project-cards .cards-item .card .card-content .project-icons {
+              display: block;
+              width: 100%;
+              text-align: center; }
+              body .projects .project-cards .cards-item .card .card-content .project-icons .fa {
+                color: #000;
+                padding: 10px; }
+                body .projects .project-cards .cards-item .card .card-content .project-icons .fa:hover {
+                  color: #FF7070; }
+          body .projects .project-cards .cards-item .card .project-img {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+            border-bottom: 2px solid #3D4949;
+            transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91); }
+            body .projects .project-cards .cards-item .card .project-img::before {
+              content: "";
+              display: block;
+              padding-top: 56.25%; }
+            @media (min-width: 40rem) {
+              body .projects .project-cards .cards-item .card .project-img::before {
+                padding-top: 66.6%; } }
+          body .projects .project-cards .cards-item .card img {
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle; }
+          body .projects .project-cards .cards-item .card .project-img-mdeyedocs {
+            background-image: url(projects/mdeyedocs.png); }
+          body .projects .project-cards .cards-item .card .project-img-twitch {
+            background-image: url(projects/twitch.png); }
+          body .projects .project-cards .cards-item .card .project-img-wikiview {
+            background-image: url(projects/wikiview.png); }
+          body .projects .project-cards .cards-item .card .project-img-weatherapp {
+            background-image: url(projects/weatherapp.png); }
+          body .projects .project-cards .cards-item .card .project-img-hpquote {
+            background-image: url(projects/hpquote.png); }
+          body .projects .project-cards .cards-item .card .project-img-portfolio {
+            background-image: url(projects/portfolio.png); }
+          body .projects .project-cards .cards-item .card .project-img-tama {
+            background-image: url(projects/tama.png); }
+  body .contact {
+    background-color: #4F5E7F;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    height: auto; }
+    body .contact .contact-content {
+      align-self: flex-end;
+      width: 100%; }
+      body .contact .contact-content h1 {
+        color: #FFF;
+        font-size: 30pt;
+        font-family: 'Sofia', cursive;
+        text-align: center; }
+        @media (min-width: 768px) {
+          body .contact .contact-content h1 {
+            font-size: 40pt; } }
+      body .contact .contact-content .contact-boxes {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        @media (min-width: 769px) {
+          body .contact .contact-content .contact-boxes {
+            flex-direction: row;
+            margin-left: 5%; } }
+        body .contact .contact-content .contact-boxes li {
+          list-style-type: none;
+          padding: 0;
+          width: 90%; }
+          @media (min-width: 769px) {
+            body .contact .contact-content .contact-boxes li {
+              padding: 1em;
+              width: 30%;
+              margin-bottom: 100px; } }
+        body .contact .contact-content .contact-boxes a {
+          text-decoration: none; }
+        body .contact .contact-content .contact-boxes .blog-box {
+          background-color: #FFF;
+          text-align: center;
+          border: 8px solid #4F5E7F;
+          border-radius: 0.25rem;
+          box-shadow: 0 20px 40px 14px rgba(0, 0, 0, 0.5);
+          width: 50%;
+          margin-bottom: 100px; }
+          @media (min-width: 769px) {
+            body .contact .contact-content .contact-boxes .blog-box {
+              width: 400px;
+              margin-left: 5%;
+              padding: 10px;
+              margin-right: 5em; } }
+          body .contact .contact-content .contact-boxes .blog-box h4 {
+            font-family: 'Fauna One', serif;
+            margin: 0;
+            padding: 1em;
+            color: #000; }
+          body .contact .contact-content .contact-boxes .blog-box img {
+            width: 100%;
+            padding: 0;
+            margin: 0; }
+            @media (min-width: 769px) {
+              body .contact .contact-content .contact-boxes .blog-box img {
+                width: 100%; } }
+        body .contact .contact-content .contact-boxes h3 {
+          font-family: 'Fauna One', serif;
+          background-color: #FF7070;
+          border: 2px solid #FFF;
+          border-radius: 0.25rem;
+          text-align: center;
+          color: #FFF;
+          padding: 10px 5px 10px 5px;
+          font-size: 12pt; }
+
+/*# sourceMappingURL=style.css.map */
