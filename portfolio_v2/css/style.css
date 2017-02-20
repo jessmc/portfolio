@@ -263,8 +263,12 @@ body {
             height: auto;
             max-width: 100%;
             vertical-align: middle; }
+          body .projects .project-cards .cards-item .card .project-img-pomodoro {
+            background-image: url(projects/pomodoro.png); }
           body .projects .project-cards .cards-item .card .project-img-mdeyedocs {
             background-image: url(projects/mdeyedocs.png); }
+          body .projects .project-cards .cards-item .card .project-img-calc {
+            background-image: url(projects/calculator.png); }
           body .projects .project-cards .cards-item .card .project-img-twitch {
             background-image: url(projects/twitch.png); }
           body .projects .project-cards .cards-item .card .project-img-wikiview {
